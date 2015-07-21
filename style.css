@@ -1,0 +1,30 @@
+body, html {
+	width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+#wrapper {
+  width: 30vw;
+  margin: 10% auto 0;
+  font-family: arial;
+  font-size: 1em;
+}
+
+input, button {
+  font-size: 1em;
+  margin: 15px 5px;
+}
+
+div {
+	margin:auto;
+  text-align: center;
+}
+
+#output {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-top: 10%;
+}
