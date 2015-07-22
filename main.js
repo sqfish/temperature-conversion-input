@@ -36,7 +36,8 @@ function determineConverter() {
     return;
   }
 
-  var optionChosen = document.getElementsByName("conversion_type"); // HTMLCollection of radio buttons
+  var $optionChosen = $(":radio");
+  // var optionChosen = document.getElementsByName("conversion_type"); // HTMLCollection of radio buttons
   var outputTemp;
   var string = "";
   for (i in optionChosen) {
@@ -53,8 +54,13 @@ function determineConverter() {
 }
 
 // Get a reference to the button element in the DOM
-var button = document.getElementById("converter");
-
+// var button = document.getElementById("converter");
 // Assign a function to be executed when the button is clicked
-button.onclick = determineConverter;
+// button.onclick = determineConverter;
+
+// Alternative JQuery
+var $button = $("#converter");
+$button.click(function(){
+  determineConverter();
+});
 
